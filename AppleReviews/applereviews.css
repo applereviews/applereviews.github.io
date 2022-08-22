@@ -1,0 +1,318 @@
+body{
+  background:#B3B3B3;
+  margin: 4%;
+}
+
+nav{
+  font-variant: small-caps;
+  font-family: Arial, "Times New Roman", serif;
+}
+
+
+nav a{
+  display:inline-block;
+/*  font-weight:bold;
+  background:#0033cca3;*/
+  width:200px;
+  padding:4px;
+  text-decoration:none;
+  text-align: center;
+  color: #ffffff;
+}
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  /*padding: 12px 20px;*/
+  transition: all .1s linear;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+nav a:hover{
+/*  background:#FFFFFF;*/
+  color: #0006CC;
+}
+
+nav a:focus{ 
+    background: #800080;
+    color: #0006CC;
+}
+
+/*nav a:active{ 
+    border: 3px solid #000000;
+}*/
+
+.Home{
+  
+}
+
+h1{
+  text-align: center;
+}
+
+.AppleReviews{
+  font-variant: small-caps;
+  background: #0033cca3;
+  font-size: 200%;
+  color: #ffffff;
+}
+
+.img{
+  background-image: url("file:///Users/jameb89%201/Desktop/WebPages/imgs/iPhone13.png");
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+/*  opacity: 0.4;*/
+/*  background-size: auto 100%;*/
+}
+
+.iPhone13{
+  border-radius: 20%;
+  transition: border-radius 2s linear;
+}
+
+.iPhone13:hover{
+  border-radius: 50%;
+}
+
+.Watch{
+      -webkit-transform: rotate(20deg) scale(.70);
+      -moz-transform: rotate(20deg) scale(.70);
+      -o-transform: rotate(20deg) scale(.70);
+      transform: rotate(20deg) scale(.70);
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(20deg) scale(.70) rotateY(0deg);
+  }
+  100%{
+    transform: rotate(20deg) scale(.70) rotateY(360deg);
+  }
+}
+
+.Watch:hover{
+  animation: spin 5s linear infinite;
+}
+
+.Watch:active{
+  animation-play-state: paused;
+}
+
+.iMac{
+  -webkit-transform: perspective(300px) rotateX(45deg) scale(.75);
+  -moz-transform: perspective(300px) rotateX(45deg) scale(.75);
+  -o-transform: perspective(300px) rotateX(45deg) scale(.75);
+  transform: perspective(300px) rotateX(45deg) scale(.75);
+}
+
+/*.iMac{
+  -webkit-transform: translateX(-70px) skewY(-20deg) scale(.75);
+  -moz-transform: translateX(-70px) skewY(-20deg) scale(.75);
+  -o-transform: translateX(-70px) skewY(-20deg) scale(.75);
+  transform: translateX(-70px) skewY(-20deg) scale(.75);
+}*/
+
+.green{
+  background: #496a4d;
+  background: -webkit-linear-gradient(to right bottom, #496a4d, #293f50);
+  background:    -moz-linear-gradient(to right bottom, #496a4d, #293f50);
+  background:         linear-gradient(to right bottom, #496a4d, #293f50);
+}
+
+.transition{
+  background: #648880;
+  background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+}
+
+.twoimgs{
+  background: #67b11c;
+  background: url("file:///Users/jameb89%201/Desktop/WebPages/imgs/Cloudy Sky.jpeg") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);
+}
+h2{
+  font-variant: small-caps;
+  
+}
+
+h3{
+  font-size: 150%;
+  background: #FFD700;
+  text-align: center;
+}
+
+figure{
+  text-align: center;
+}
+
+a[href*="twitter"] {
+  background: #1DA1F2;
+}
+
+ol{
+  list-style-type: upper-roman;
+}
+
+/*section{
+  width: 20%;
+  display: inline-block;
+  margin-right: 2%;
+  float: left;
+}
+
+footer{
+  clear: both;
+}*/
+
+/*::-moz-selection {
+  background: #ff7b29;
+}
+
+::selection {
+  background: #ff7b29;
+}*/
+
+/*.card-container {
+  cursor: pointer;
+  height: 300px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+}*/
+
+.card {
+  cursor: pointer;
+  height: 650px;
+  position: relative;
+  left: 510px;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 500px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.side {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 600px;
+  text-align: center;
+  transform: rotateY(180deg);
+  font-size: 300%;
+}
+
+/*Calendar*/
+
+table.cal{
+  position: relative;
+  left: 510px;
+  color:#06425C;
+  border-spacing: 0;
+  border: 3px solid black;
+  /*-webkit-border-radius: 0 0 25px 25px;*/
+  border-radius: 0 0 25px 25px;
+}
+
+span{
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+  visibility: hidden;
+}
+
+.WWDC{
+  background-image: url(https://i.blogs.es/a0df82/img_0429/450_1000.webp);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  position: relative;
+}
+
+.holiday, .WWDC{
+  color:  #FFFFFF;
+}
+
+td:active>span{
+  visibility:visible;
+}
+
+tr:nth-child(odd) {
+  background: #F2F2F2;
+}
+tr:nth-child(even) {
+  background: #CDBB79;
+}
+
+tr:last-child{
+  -webkit-border-radius: 0 0 25px 25px;
+  border-radius: 0 0 25px 25px; 
+}
+tr:last-child>td:first-child {
+  -webkit-border-radius: 0 0 0 25px;
+  border-radius: 0 0 0 25px;  
+}
+
+tr:last-child>td:last-child{
+  -webkit-border-radius: 0 0 25px 0;
+  border-radius: 0 0 25px 0;  
+}
+
+.cal caption{
+  text-transform: uppercase;
+  background-color: #666666;
+  color:#ffffff;
+  font-size: 150%;
+  -webkit-border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 0 0;
+}
+
+.cal th, .cal td{
+  margin: 2px;
+  padding-bottom: 2px;
+}
+
+th{
+  text-align: center;
+  background: #FFFFFF;
+}
+
+.cal td{
+  width:75px;
+  height:75px;
+  vertical-align:top;
+}
+
+.holiday{
+  margin:0;
+  padding:0;
+  background-color: #51A39D;
+}
+
+.old, .new{
+  padding:0;
+  margin: 0;
+  background-color: #51A39D;
+  color:rgba(0,0,0,.25);
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png") no-repeat;
+  border-spacing: 0;
+
+
